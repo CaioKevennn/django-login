@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block 'conteudo' %}
+    {% if status == '1' %}
+        <h1>Digite um nome ou e-mail valido</h1>
+    {% endif %}
+   {% if status == '2' %}
+        <h1>Digite uma senha valida</h1>
+   {% endif %}
+   {% if status == '3' %}
+        <h1>E-mail já cadastrado</h1>
+    {% endif %}
+    {% if status == '4' %}
+        <h1>Cadastro realizado com sucesso</h1>
+    {% endif %}
+    {% if status == '5' %}
+        <h1>Erro interno do sistema</h1>
+    {% endif %}
+    <form method="POST" action="{% url 'valid_cad' %}">{% csrf_token %}
+        <input type="text" placeholder="Nome" name="nome">
+        <input type="email" placeholder="Email" name="email" >
+        <input type="password" placeholder="senha" name="senha">
+        <input type="submit" placeholder="Enviar">
+        <a href="{% url 'login' %}">Voltar pro login</a>
+    </form>
+{% endblock %}
