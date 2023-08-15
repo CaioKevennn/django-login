@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\harkn\OneDrive\Imagens\pythonfull\session\venv
+set VIRTUAL_ENV=C:\Users\caiok\OneDrive\Documentos\Programação\python_p\git\review_CSS_HTML\Construção de Páginas para Internet I\django-login\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

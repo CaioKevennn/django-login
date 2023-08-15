@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\harkn\OneDrive\Imagens\pythonfull\session\venv"
+VIRTUAL_ENV="C:\Users\caiok\OneDrive\Documentos\Programação\python_p\git\review_CSS_HTML\Construção de Páginas para Internet I\django-login\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
